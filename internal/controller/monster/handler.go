@@ -208,6 +208,7 @@ func toResponseJson(r *monsters.Monster) ResponseJson {
 		Weakness_element:   we,
 		Ranking:            ranking,
 		ImageUrl:           ptr.CreateImageURL(r.MonsterId),
+		IconUrl:	    ptr.CreateIconURL(r.MonsterId),
 		BGM:                bgm,
 		Element:            r.Element,
 	}

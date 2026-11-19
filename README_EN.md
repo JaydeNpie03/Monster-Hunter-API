@@ -1,7 +1,7 @@
 # MH-API (Monster Hunter API)
 
 This API Endpoint is 
-https://api.mh-api.com/v1
+https:/141.148.71.142/v1/
 
 MH-API is an open source project that provides strategy information and other information related to the Monster Hunter series. This project is developing an API to allow players of the Monster Hunter series to access game strategy information, etc., and to easily create secondary works and tools, etc.
 
@@ -88,6 +88,16 @@ This project is made possible by contributors from the open source community and
 This project uses the Monster Hunter Series™, a trademark and registered trademark of Capcom Co. Ltd . The Monster Hunter Series™ is the intellectual property of Capcom Co. Ltd . We hereby express our gratitude to Capcom.
 
 This project is unofficial and has nothing to do with Capcom Co Ltd .
+
+## Data Sources
+
+Below is a list of all sources that data was pulled from for this API. All data was pulled via hand-written Go scripts using HTTP GET calls, and no AI was used to scrape or parse data.
+
+ - https://thehunterpedia.com/monsters
+ - https://api.mh-api.com/v1/monsters
+ - https://monsterhunterwiki.org/wiki/Monster_List
+ - https://github.com/CrimsonNynja/monster-hunter-DB/blob/master/monsters.json
+ - https://wikiwiki.jp/nenaiko/%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC
 
 **Happy coding!
 

@@ -33,6 +33,7 @@ type ResponseJson struct {
 	Weakness_element   []*Weakness_element `json:"weakness_element,omitempty"`    // 弱点肉質（属性）
 	Ranking            []*Ranking          `json:"ranking,omitempty"`             // 人気投票ランキング
 	ImageUrl           *string             `json:"image_url,omitempty"`           // モンスター画像URL
+	IconUrl		   *string	       `json"icon_url,omitempty"`	      // 
 	BGM                []*Music            `json:"bgm,omitempty"`                 // BGM
 }
 

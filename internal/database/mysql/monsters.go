@@ -3,7 +3,7 @@ package mysql
 import (
 	"context"
 	"strings"
-
+	"fmt"
 	"mh-api/internal/domain/monsters"
 	"mh-api/pkg/element"
 )
@@ -26,7 +26,7 @@ func (r *monsterRepository) FindAll(ctx context.Context, params monsters.SearchP
 	}
 
 	if params.MonsterName != "" {
-		whereClauses = append(whereClauses, "name LIKE ?")
+		whereClauses = append(whereClauses, "CONCAT(name, ' ', name_en) LIKE ?")
 		whereArgs = append(whereArgs, "%"+params.MonsterName+"%")
 	}
 
@@ -89,7 +89,9 @@ func (r *monsterRepository) FindAll(ctx context.Context, params monsters.SearchP
 		query = query.Where(whereStr, whereArgs...)
 	}
 
-	result := query.Limit(limit).Offset(params.Offset).Order(sort).Find(&monsterList)
+	result := query.Debug().Limit(limit).Offset(params.Offset).Order(sort).Find(&monsterList)
+	fmt.Println("Rows affected: ", result.RowsAffected)
+	fmt.Println("Query Error: ", result.Error)
 	if result.Error != nil {
 		return nil, result.Error
 	}
@@ -100,7 +102,7 @@ func (r *monsterRepository) FindAll(ctx context.Context, params monsters.SearchP
 		countQuery = countQuery.Where(whereStr, whereArgs...)
 	}
 	countQuery.Count(&total)
-
+	
 	return &monsters.SearchResult{
 		Monsters: monsterList,
 		Total:    int(total),

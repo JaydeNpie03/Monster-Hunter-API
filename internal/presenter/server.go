@@ -35,6 +35,9 @@ func NewServer() (*gin.Engine, error) {
 	r.Use(middleware.RequestLogger())
 	r.Use(middleware.WithDB())
 
+	// Static fileserver initialization
+	r.Static("/images/monster", "/app/data/monster")
+
 	// ヘルスチェック
 	v1 := r.Group("/v1")
 	{

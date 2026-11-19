@@ -21,6 +21,10 @@ bin/
 # Go workspace file
 go.work
 
+#Local config files
+*.log
+config.prod.yml
+
 tmp/
 contact.txt
 .DS_Store

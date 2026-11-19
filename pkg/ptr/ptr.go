@@ -1,6 +1,7 @@
 package ptr
 
-const IMAGE_URL = "https://raw.githubusercontent.com/o-ga09/MH-API/main/data/monster"
+const IMAGE_URL = "https://141.148.71.142/images/monster"
+const ICON_URL = "https://141.148.71.142/images/monster/icons"
 
 func StrToPtr(s string) *string {
 	if s == "" {
@@ -33,6 +34,14 @@ func CreateImageURL(id string) *string {
 	}
 
 	return StrToPtr(IMAGE_URL + "/" + id + ".png")
+}
+
+func CreateIconURL(id string) *string {
+        if id == "" {
+                return nil
+        }
+
+        return StrToPtr(ICON_URL + "/" + id + "_icon.png")
 }
 
 func IntToPtr(i int) *int {
