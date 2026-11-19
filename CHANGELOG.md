@@ -1,5 +1,7 @@
 # Changelog
 
+## [v1.2.3](https://github.com/JaydeNpie03/Monster-Hunter-API/commits/v1.2.3) - 2026-11-19
+
 ## [v1.2.3](https://github.com/o-ga09/MH-API/compare/v1.2.2...v1.2.3) - 2026-04-09
 - feat: 検索の汎用性を高める by @o-ga09 in https://github.com/o-ga09/MH-API/pull/223
 - chore: tagでCloudRunにデプロイできるように修正 by @o-ga09 in https://github.com/o-ga09/MH-API/pull/226
