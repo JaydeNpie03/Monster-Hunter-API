@@ -1,12 +1,12 @@
 module mh-api
 
-go 1.26.0
+go 1.26.10
 
 require (
 	cloud.google.com/go/logging v1.13.1
 	cloud.google.com/go/storage v1.57.2
 	github.com/caarlos0/env/v6 v6.10.1
-	github.com/gin-contrib/cors v1.7.8
+	github.com/gin-contrib/cors v1.7.11
 	github.com/gin-gonic/gin v1.12.0
 	github.com/go-playground/validator/v10 v10.30.6
 	github.com/go-sql-driver/mysql v1.10.0
@@ -150,7 +150,7 @@ require (
 	golang.org/x/arch v0.29.0 // indirect
 	golang.org/x/crypto v0.58.0 // indirect
 	golang.org/x/mod v0.41.0 // indirect
-	golang.org/x/net v0.60.0 // indirect
+	golang.org/x/net v0.62.0 // indirect
 	golang.org/x/sys v0.49.0 // indirect
 	golang.org/x/text v0.43.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
