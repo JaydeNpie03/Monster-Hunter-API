@@ -1,5 +1,17 @@
 # Changelog
 
+## [v1.2.3](https://github.com/JaydeNpie03/Monster-Hunter-API/commits/v1.2.3) - 2026-11-22
+
+- chore(deps): bump go.opentelemetry.io/otel/metric from 1.43.0 to 1.47.0 by @dependabot[bot] in https://github.com/JaydeNpie03/Monster-Hunter-API/pull/1
+- chore(deps): bump google.golang.org/genai from 1.53.0 to 1.77.0 by @dependabot[bot] in https://github.com/JaydeNpie03/Monster-Hunter-API/pull/4
+- chore(deps): bump github.com/go-playground/validator/v10 from 10.30.3 to 10.30.6 by @dependabot[bot] in https://github.com/JaydeNpie03/Monster-Hunter-API/pull/7
+- chore(deps): bump go.opentelemetry.io/otel/exporters/prometheus from 0.65.0 to 0.69.0 by @dependabot[bot] in https://github.com/JaydeNpie03/Monster-Hunter-API/pull/2
+- chore(deps): bump go.opentelemetry.io/otel/sdk/metric from 1.43.0 to 1.47.0 by @dependabot[bot] in https://github.com/JaydeNpie03/Monster-Hunter-API/pull/5
+- chore(deps): bump github.com/gin-contrib/cors from 1.7.8 to 1.7.11 by @dependabot[bot] in https://github.com/JaydeNpie03/Monster-Hunter-API/pull/8
+- chore(deps): bump github.com/prometheus/client_golang from 1.24.1 to 1.25.0 by @dependabot[bot] in https://github.com/JaydeNpie03/Monster-Hunter-API/pull/11
+- chore(deps): bump github.com/go-sql-driver/mysql from 1.10.0 to 1.10.1 by @dependabot[bot] in https://github.com/JaydeNpie03/Monster-Hunter-API/pull/12
+- chore(deps): bump go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin from 0.68.0 to 0.72.0 by @dependabot[bot] in https://github.com/JaydeNpie03/Monster-Hunter-API/pull/14
+
 ## [v1.2.3](https://github.com/o-ga09/MH-API/compare/v1.2.2...v1.2.3) - 2026-04-09
 - feat: 検索の汎用性を高める by @o-ga09 in https://github.com/o-ga09/MH-API/pull/223
 - chore: tagでCloudRunにデプロイできるように修正 by @o-ga09 in https://github.com/o-ga09/MH-API/pull/226
